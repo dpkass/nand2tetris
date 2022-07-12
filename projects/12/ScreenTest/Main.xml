@@ -1,0 +1,553 @@
+<class>
+<keyword> class </keyword>
+<identifier> Main </identifier>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> main </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 220 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 511 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 220 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 280 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 90 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 410 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 220 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 350 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 120 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 390 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 219 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawRectangle </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 292 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 120 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 332 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 150 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> setColor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawCircle </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 360 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 170 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 280 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 90 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 345 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 35 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 345 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 35 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 410 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 90 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawCircle </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 140 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 60 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 30 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 140 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 26 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 140 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 6 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 163 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 35 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 178 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 20 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 174 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 60 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 194 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 60 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 163 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 85 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 178 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 100 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 140 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 94 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 140 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 114 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 117 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 85 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 102 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 100 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 106 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 60 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 86 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 60 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 117 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 35 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 102 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 20 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

@@ -1,0 +1,2348 @@
+<class>
+<keyword> class </keyword>
+<identifier> Screen </identifier>
+<symbol> { </symbol>
+<keyword> static </keyword>
+<keyword> int </keyword>
+<identifier> screen </identifier>
+<symbol> ; </symbol>
+<keyword> static </keyword>
+<identifier> Array </identifier>
+<identifier> twoToThe </identifier>
+<symbol> ; </symbol>
+<keyword> static </keyword>
+<keyword> boolean </keyword>
+<identifier> color </identifier>
+<symbol> ; </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> init </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> screen </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 16384 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> color </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 16 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 8 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 16 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 5 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 32 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 6 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 64 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 7 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 128 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 8 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 256 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 9 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 512 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1024 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 11 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 2048 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 12 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 4096 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 13 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 8192 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 14 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 16384 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 15 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 16384 </integerConstant>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 16384 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> clearScreen </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> i </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> screen </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 24576 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> setColor </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> boolean </keyword>
+<identifier> b </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> color </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> x </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> address </identifier>
+<symbol> , </symbol>
+<identifier> value </identifier>
+<symbol> , </symbol>
+<identifier> mod </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> address </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> screen </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 32 </integerConstant>
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> y </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+</term>
+<symbol> / </symbol>
+<term>
+<integerConstant> 16 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> mod </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+</term>
+<symbol> / </symbol>
+<term>
+<integerConstant> 16 </integerConstant>
+</term>
+<symbol> * </symbol>
+<term>
+<integerConstant> 16 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> value </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> peek </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> address </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> color </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> value </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> value </identifier>
+</term>
+<symbol> | </symbol>
+<term>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> mod </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> value </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> value </identifier>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> twoToThe </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> mod </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> address </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> value </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> x1 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y1 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> x2 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y2 </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> dx </identifier>
+<symbol> , </symbol>
+<identifier> dy </identifier>
+<symbol> , </symbol>
+<identifier> a </identifier>
+<symbol> , </symbol>
+<identifier> b </identifier>
+<symbol> , </symbol>
+<identifier> diff </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dx </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x2 </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dy </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y2 </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> y2 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y1 </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> y2 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y1 </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> x2 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x1 </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> x2 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> x1 </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawPixel </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> diff </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> diff </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dx </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> drawRectangle </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> x1 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y1 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> x2 </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y2 </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> y2 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> x2 </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> y1 </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> y1 </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> drawCircle </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> x </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> y </identifier>
+<symbol> , </symbol>
+<keyword> int </keyword>
+<identifier> r </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> dy </identifier>
+<symbol> , </symbol>
+<identifier> term </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dy </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+<identifier> r </identifier>
+</term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> &gt; </symbol>
+<term>
+<identifier> r </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> term </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> sqrt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> multiply </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> r </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> r </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> multiply </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Screen </identifier>
+<symbol> . </symbol>
+<identifier> drawLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> term </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> x </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> term </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> y </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> dy </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> dy </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> dy </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

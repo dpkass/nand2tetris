@@ -1,0 +1,71 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/12/Memory.jack
+
+/**
+ * This library provides two services: direct access to the computer's main
+ * memory (RAM), and allocation and recycling of memory blocks. The Hack RAM
+ * consists of 32,768 words, each holding a 16-bit binary number.
+ */ 
+class Memory {
+    static Array ram, freeList, heap;
+
+    /** Initializes the class. */
+    function void init() {
+        let ram = 0;
+        let heap = 2048;
+        let heap[0] = 0;
+        let heap[1] = 14334;
+        let freeList = heap;
+
+        return;
+    }
+
+    /** Returns the RAM value at the given address. */
+    function int peek(int address) {
+        return ram[address];
+    }
+
+    /** Sets the RAM value at the given address to the given value. */
+    function void poke(int address, int value) {
+        let ram[address] = value;
+
+        return;
+    }
+
+    /** Finds an available RAM block of the given size and returns
+     *  a reference to its base address. */
+    function int alloc(int size) {
+        var int segment, block;
+
+        let segment = freeList;
+
+        while(ram[segment + 1] < (size + 2)){
+            let segment = ram[segment];
+        }
+
+        let ram[segment + 1] = ram[segment + 1] - size;     // update segment length
+        let block = segment + 2 + ram[segment + 1];         // save block address
+        let ram[block] = 0;                                 // block next address 0
+        let ram[block + 1] = size;                          // set block size
+
+        return block + 2;
+    }
+
+    /** De-allocates the given object (cast as an array) by making
+     *  it available for future allocations. */
+    function void deAlloc(Array o) {
+        var int segment;
+
+        let segment = ram[freeList];
+
+        while (~(segment = 0)) {
+            let segment = ram[segment];
+        }
+
+        let ram[segment] = o;
+
+        return;
+    }
+}

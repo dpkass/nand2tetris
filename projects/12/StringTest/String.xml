@@ -1,0 +1,817 @@
+<class>
+<keyword> class </keyword>
+<identifier> String </identifier>
+<symbol> { </symbol>
+<keyword> field </keyword>
+<keyword> int </keyword>
+<identifier> length </identifier>
+<symbol> , </symbol>
+<identifier> max </identifier>
+<symbol> ; </symbol>
+<keyword> field </keyword>
+<identifier> Array </identifier>
+<identifier> string </identifier>
+<symbol> ; </symbol>
+<subroutineDec>
+<keyword> constructor </keyword>
+<identifier> String </identifier>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> maxLength </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> maxLength </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> string </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> alloc </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> string </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> maxLength </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> max </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> maxLength </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> length </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<keyword> this </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> deAlloc </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<keyword> this </keyword>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier> length </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> length </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> char </keyword>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> j </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> string </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> j </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> setCharAt </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> j </identifier>
+<symbol> , </symbol>
+<keyword> char </keyword>
+<identifier> c </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> string </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> j </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<identifier> String </identifier>
+<identifier> appendChar </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> char </keyword>
+<identifier> c </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> string </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> length </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> length </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> length </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<keyword> this </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> eraseLastChar </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> length </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> length </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> int </keyword>
+<identifier> intValue </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> val </identifier>
+<symbol> , </symbol>
+<identifier> d </identifier>
+<symbol> , </symbol>
+<identifier> i </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> boolean </keyword>
+<identifier> neg </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 45 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> neg </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<identifier> length </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> d </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> string </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 48 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> val </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+<symbol> * </symbol>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> d </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> neg </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+<identifier> val </identifier>
+</term>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> method </keyword>
+<keyword> void </keyword>
+<identifier> setInt </identifier>
+<symbol> ( </symbol>
+<parameterList>
+<keyword> int </keyword>
+<identifier> val </identifier>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> ld </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> char </keyword>
+<identifier> c </identifier>
+<symbol> ; </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> length </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> appendChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 45 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> val </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Math </identifier>
+<symbol> . </symbol>
+<identifier> abs </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ld </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> - </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> / </symbol>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> * </symbol>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> c </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> ld </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 48 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> &lt; </symbol>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> appendChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+<keyword> else </keyword>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> setInt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> val </identifier>
+</term>
+<symbol> / </symbol>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> appendChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> char </keyword>
+<identifier> newLine </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<integerConstant> 128 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> char </keyword>
+<identifier> backSpace </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<integerConstant> 129 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> char </keyword>
+<identifier> doubleQuote </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<statements>
+<returnStatement>
+<keyword> return </keyword>
+<expression>
+<term>
+<integerConstant> 34 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

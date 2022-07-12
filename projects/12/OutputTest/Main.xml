@@ -1,0 +1,326 @@
+<class>
+<keyword> class </keyword>
+<identifier> Main </identifier>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> main </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<identifier> String </identifier>
+<identifier> s </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> s </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> String </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> appendChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> String </identifier>
+<symbol> . </symbol>
+<identifier> doubleQuote </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> moveCursor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 63 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 66 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> moveCursor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 22 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 67 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> moveCursor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 22 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 63 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 68 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printChar </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 65 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> moveCursor </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> 0123456789 </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> !#$%&'()*+,-./:;<=>?@[\]^_`{|}~ </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printInt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 12345 </integerConstant>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> backSpace </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printInt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 6789 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

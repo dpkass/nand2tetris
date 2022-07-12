@@ -1,0 +1,604 @@
+<class>
+<keyword> class </keyword>
+<identifier> Main </identifier>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> main </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> temp </identifier>
+<symbol> , </symbol>
+<identifier> err </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<identifier> Array </identifier>
+<identifier> a </identifier>
+<symbol> , </symbol>
+<identifier> b </identifier>
+<symbol> , </symbol>
+<identifier> c </identifier>
+<symbol> ; </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8000 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<integerConstant> 333 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> temp </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> peek </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8000 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8001 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> temp </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 222 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8002 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 100 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8003 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> err </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> c </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 500 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> c </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 499 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> a </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<identifier> b </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<identifier> a </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<identifier> b </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> err </identifier>
+</term>
+<symbol> + </symbol>
+<term>
+<integerConstant> 10 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8004 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 499 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> err </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> a </identifier>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> b </identifier>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Array </identifier>
+<symbol> . </symbol>
+<identifier> new </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> b </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 499 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 90 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<identifier> c </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> err </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Memory </identifier>
+<symbol> . </symbol>
+<identifier> poke </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 8005 </integerConstant>
+</term>
+</expression>
+<symbol> , </symbol>
+<expression>
+<term>
+<identifier> b </identifier>
+<symbol> [ </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ] </symbol>
+</term>
+<symbol> + </symbol>
+<term>
+<identifier> err </identifier>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> c </identifier>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> b </identifier>
+<symbol> . </symbol>
+<identifier> dispose </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>

@@ -1,0 +1,849 @@
+<class>
+<keyword> class </keyword>
+<identifier> Main </identifier>
+<symbol> { </symbol>
+<subroutineDec>
+<keyword> function </keyword>
+<keyword> void </keyword>
+<identifier> main </identifier>
+<symbol> ( </symbol>
+<parameterList>
+</parameterList>
+<symbol> ) </symbol>
+<subroutineBody>
+<symbol> { </symbol>
+<keyword> var </keyword>
+<keyword> char </keyword>
+<identifier> c </identifier>
+<symbol> , </symbol>
+<identifier> key </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<identifier> String </identifier>
+<identifier> s </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> int </keyword>
+<identifier> i </identifier>
+<symbol> ; </symbol>
+<keyword> var </keyword>
+<keyword> boolean </keyword>
+<identifier> ok </identifier>
+<symbol> ; </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> keyPressed test: </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<identifier> ok </identifier>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> Please press the 'Page Down' key </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> key </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> key </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> keyPressed </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> c </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> key </identifier>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> key </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> key </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> keyPressed </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 137 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> ok </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> readChar test: </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> (Verify that the pressed character is echoed to the screen) </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<identifier> ok </identifier>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> Please press the number '3':  </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> c </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> readChar </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> c </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 51 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> ok </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> readLine test: </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> (Verify echo and usage of 'backspace') </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<identifier> ok </identifier>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> s </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> readLine </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> Please type 'JACK' and press enter:  </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> length </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 4 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 0 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 74 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 1 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 65 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 2 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 67 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> &amp; </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> s </identifier>
+<symbol> . </symbol>
+<identifier> charAt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<integerConstant> 3 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+<symbol> = </symbol>
+<term>
+<integerConstant> 75 </integerConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> ok </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> false </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> readInt test: </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> (Verify echo and usage of 'backspace') </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<whileStatement>
+<keyword> while </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> ~ </symbol>
+<term>
+<identifier> ok </identifier>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<letStatement>
+<keyword> let </keyword>
+<identifier> i </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<identifier> Keyboard </identifier>
+<symbol> . </symbol>
+<identifier> readInt </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> Please type '-32123' and press enter:  </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+<ifStatement>
+<keyword> if </keyword>
+<symbol> ( </symbol>
+<expression>
+<term>
+<identifier> i </identifier>
+</term>
+<symbol> = </symbol>
+<term>
+<symbol> ( </symbol>
+<expression>
+<term>
+<symbol> - </symbol>
+<term>
+<integerConstant> 32123 </integerConstant>
+</term>
+</term>
+</expression>
+<symbol> ) </symbol>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> { </symbol>
+<statements>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> ok </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<letStatement>
+<keyword> let </keyword>
+<identifier> ok </identifier>
+<symbol> = </symbol>
+<expression>
+<term>
+<keyword> true </keyword>
+</term>
+</expression>
+<symbol> ; </symbol>
+</letStatement>
+</statements>
+<symbol> } </symbol>
+</ifStatement>
+</statements>
+<symbol> } </symbol>
+</whileStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> println </identifier>
+<symbol> ( </symbol>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<doStatement>
+<keyword> do </keyword>
+<identifier> Output </identifier>
+<symbol> . </symbol>
+<identifier> printString </identifier>
+<symbol> ( </symbol>
+<expression>
+<term>
+<stringConstant> Test completed successfully </stringConstant>
+</term>
+</expression>
+<symbol> ) </symbol>
+<symbol> ; </symbol>
+</doStatement>
+<returnStatement>
+<keyword> return </keyword>
+<symbol> ; </symbol>
+</returnStatement>
+</statements>
+<symbol> } </symbol>
+</subroutineBody>
+</subroutineDec>
+<symbol> } </symbol>
+</class>
