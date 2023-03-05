@@ -1,6 +1,6 @@
 # nand2tetris
 
-This is my version of the nand2tetris project. I did it as part of my Universitz studies, but thought I'd upload it for ppl to use, if they have issues. 
+This is my version of the nand2tetris project. I did it as part of my University studies, but thought I'd upload it as inspo. 
 
 All of the projects, which are to be programmed in a language of your choosing, I used Java.
 
